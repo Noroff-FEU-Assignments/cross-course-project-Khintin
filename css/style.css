@@ -1,0 +1,31 @@
+.logo {
+  max-width: 60px;
+}
+
+.header {
+  background-color: white;
+}
+header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header > div a input {
+  display: flex;
+  height: 81px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.main-navigation ul li .btn:hover {
+  background-color: black;
+}
+
+.main-navigation button {
+  text-decoration-color: black;
+  background-color: white;
+}
