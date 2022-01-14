@@ -1,3 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
-  max-width: 60px;
+    max-width: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin-top: 60px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    padding: 30px 15px;
+    color: black;
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+li a:hover {
+    color: #c942f7;
+}
+.hero {
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: 850px;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+.hero h2 {
+    font-size: 35px;
+    font-family: serif;
+}
+button {
+    width: 140px;
+}
+.hero img {
+    max-width: 100%;
+}
+
+button,
+.btn {
+    background-color: #c942f7;
+    color: white;
+    padding: 15px 20px;
+    border-color: #c942f7;
+    text-decoration: none;
+}
+
+.hero button:hover {
+    color: #c942f7;
+    background-color: white;
+    border-color: #c942f7;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.featured-game {
+    display: flex;
+}
+
+.featured-game.reverse {
+    flex-direction: row-reverse;
+}
+
+.featured-game .featured-game-info {
+    flex: 0 0 50%;
+}
+
+.featured-game-info h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.featured-game-info h4 {
+    text-align: center;
+}
+
+.featured-game-info p {
+    text-align: left;
+    margin: 50px;
+}
+
+.featured-game-info .info {
+    text-align: left;
+    margin-top: 20px;
+}
+.featured-game-info .link {
+    text-align: left;
+    color: #c942f7;
+    padding-left: 70px;
+    font-size: 12px;
+}
+
+.featured-game-info .btn {
+    margin: 120px 55px 0;
+}
+
+.featured-game-info .btn:hover {
+    color: #c942f7;
+    background-color: white;
+    border-color: black;
+}
+.featured-game img {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 80px;
+}
+
+.top-games h2 {
+    text-align: center;
+}
+
+.rating {
+    font-size: 30px;
+    color: #c942f7;
+}
+.top-game-entry img {
+    width: 240px;
+    height: 360px;
+    margin-left: 50px;
+}
+
+.top-game-entry a:hover {
+    color: #c942f7;
+}
+
+.top-games-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    padding: 30px 20px;
+    color: #c942f7;
+    margin-top: 80px;
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+    header ul {
+        flex-direction: row;
+        width: 768pxo;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .featured-game img {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin: 80px;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        margin-top: 60px;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .hero {
+        background-image: url(/images/background.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        height: 850px;
+        text-align: center;
+        font-weight: bold;
+        font-style: normal;
+        font-family: "Courier New", Courier, monospace;
+        color: white;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+    .hero h2 {
+        font-size: 35px;
+        font-family: serif;
+    }
+    button {
+        width: 140px;
+    }
+    .hero img {
+        max-width: 100%;
+    }
+
+    button,
+    .btn {
+        background-color: #c942f7;
+        color: white;
+        padding: 15px 20px;
+        border-color: #c942f7;
+        text-decoration: none;
+    }
+
+    .hero button:hover {
+        color: #c942f7;
+        background-color: white;
+        border-color: #c942f7;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .featured-game {
+        display: flex;
+    }
+
+    .featured-game.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .featured-game .featured-game-info {
+        flex: 0 0 50%;
+    }
+
+    .featured-game-info h2 {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .featured-game-info h4 {
+        text-align: center;
+    }
+
+    .featured-game-info p {
+        text-align: left;
+        margin: 50px;
+    }
+
+    .featured-game-info .info {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .featured-game-info .link {
+        text-align: left;
+        color: #c942f7;
+        padding-left: 70px;
+        font-size: 12px;
+    }
+
+    .featured-game-info .btn {
+        margin: 120px 55px 0;
+    }
+
+    .featured-game-info .btn:hover {
+        color: #c942f7;
+        background-color: white;
+        border-color: black;
+    }
+    .featured-game img {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin: 80px;
+    }
+
+    .top-games h2 {
+        text-align: center;
+    }
+
+    .rating {
+        font-size: 30px;
+        color: #c942f7;
+    }
+    .top-game-entry img {
+        width: 240px;
+        height: 360px;
+        margin-left: 50px;
+    }
+
+    .top-game-entry a:hover {
+        color: #c942f7;
+    }
+
+    .top-games-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+        margin: 60px 0;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: black;
+        padding: 30px 20px;
+        color: #c942f7;
+        margin-top: 80px;
+    }
 }
