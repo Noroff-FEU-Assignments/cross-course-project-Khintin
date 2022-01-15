@@ -1,5 +1,6 @@
 .logo {
     max-width: 90px;
+    margin: 10px;
 }
 
 body {
@@ -7,25 +8,56 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
+/* Hide the links inside the navigation menu (except for logo/home) */
+header nav .btn-mobile-menu {
+    display: none;
+}
+
+header nav label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 51px;
+    width: 51px;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    transition: transform 0.8s ease;
+}
+
+header nav label img {
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: black;
+}
+
+header nav .btn-mobile-menu:checked ~ ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100vw;
+    align-items: center;
+}
+
+header nav .btn-mobile-menu:checked ~ label {
+    transform: rotateZ(360deg);
+}
+
+header nav ul {
+    display: none;
 }
 
 ul {
-    display: flex;
-    flex-direction: column;
     font-weight: bold;
     text-align: center;
     padding: 20px;
     list-style: none;
 }
 
-header ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+header nav ul {
+    flex-direction: row;
+    justify-content: left;
     list-style: none;
     font-weight: bold;
     max-width: 100%;
@@ -212,17 +244,6 @@ footer {
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    header ul {
-        flex-direction: row;
-        justify-content: center;
-        max-width: 786px;
-    }
-
     a {
         text-decoration: none;
         padding: 20px 10px;
@@ -278,10 +299,6 @@ footer {
     .featured-game .featured-game-info-reverse {
         flex: 0 0 50%;
     }
-    .featured-game-info-reverse p {
-        margin: 20px;
-        font-size: 16px;
-    }
 
     .featured-game-info-reverse {
         margin-top: 10px;
@@ -291,9 +308,7 @@ footer {
         margin: 120px 0 100px 50px;
         text-align: left;
     }
-    .featured-game-info-reverse .info p {
-        font-size: 16;
-    }
+
     .featured-game-info-reverse .btn {
         margin: 120px 0 100px 50px;
     }
@@ -326,11 +341,29 @@ footer {
 
 /* PC */
 @media screen and (min-width: 1200px) {
-    header {
+    header > div {
         display: flex;
         flex-direction: row;
-        justify-content: left;
-        width: 100%;
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row !important;
+        width: auto !important;
+    }
+
+    header nav .btn-mobile-menu {
+        display: none;
+    }
+
+    header nav label {
+        display: none;
     }
 
     ul {
@@ -424,7 +457,6 @@ footer {
 
     .featured-game-info-reverse .info p {
         margin-top: 5px;
-        font-size: 16px;
     }
 
     .featured-game-info-reverse .btn {
