@@ -28,7 +28,7 @@ header ul {
     justify-content: center;
     list-style: none;
     font-weight: bold;
-    max-width: 390px;
+    max-width: 100%;
 }
 
 a {
@@ -55,7 +55,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 390px;
+    max-width: 100%;
     height: 650px;
     text-align: center;
     font-weight: bold;
@@ -101,7 +101,7 @@ button,
 }
 
 section {
-    max-width: 360px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -123,7 +123,7 @@ section {
 .featured-game-info p {
     text-align: left;
     margin: 20px 30px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .featured-game-info .info {
@@ -137,8 +137,7 @@ section {
 }
 
 .featured-game-info .btn {
-    margin: 120px;
-    text-align: center;
+    margin-left: 50px;
 }
 
 .featured-game-info .btn:hover {
@@ -158,12 +157,13 @@ section {
     font-size: 14px;
 }
 
-.featured-game-info-reverse .info {
-    margin-top: 16px;
+.featured-game-info-reverse .info p {
+    margin-top: 5px;
+    font-size: 16px;
 }
 
 .featured-game-info-reverse .btn {
-    margin: 120px;
+    margin: 50px;
 }
 
 .featured-game-info-reverse a:hover {
@@ -179,11 +179,13 @@ section {
 .rating {
     font-size: 25px;
     color: #c942f7;
+    text-align: center;
 }
 .top-game-entry img {
-    width: 200px;
-    height: 180px;
-    margin-left: 5px 30px;
+    width: 190px;
+    height: 220px;
+    margin-left: 5px 20px;
+    align-items: center;
 }
 
 .top-game-entry a:hover {
@@ -278,7 +280,7 @@ footer {
     }
     .featured-game-info-reverse p {
         margin: 20px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .featured-game-info-reverse {
@@ -289,10 +291,9 @@ footer {
         margin: 120px 0 100px 50px;
         text-align: left;
     }
-    .featured-game-info-reverse .info {
-        margin-top: 5px;
+    .featured-game-info-reverse .info p {
+        font-size: 16;
     }
-
     .featured-game-info-reverse .btn {
         margin: 120px 0 100px 50px;
     }
@@ -304,7 +305,7 @@ footer {
 
     .top-game-entry img {
         width: 190px;
-        height: 300px;
+        height: 260px;
         margin: 0 0 60px 30px;
     }
 
