@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .logo {
     max-width: 90px;
 }
@@ -15,10 +10,16 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 ul {
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    list-style: none;
 }
 
 header ul {
@@ -27,7 +28,7 @@ header ul {
     justify-content: center;
     list-style: none;
     font-weight: bold;
-    max-width: 100%;
+    max-width: 390px;
 }
 
 a {
@@ -40,7 +41,9 @@ a {
 input {
     border-radius: 5px;
     padding: 5px;
-    margin-left: 30px;
+    margin-left: 5px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 li a:hover {
@@ -52,8 +55,8 @@ li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
-    height: 850px;
+    max-width: 390px;
+    height: 650px;
     text-align: center;
     font-weight: bold;
     font-style: normal;
@@ -63,24 +66,30 @@ li a:hover {
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 40px;
 }
+
 .hero h2 {
-    font-size: 35px;
+    font-size: 25px;
     font-family: serif;
+    margin-top: 10px;
 }
+
 button {
-    width: 140px;
+    width: 120px;
+    margin-top: 30px;
 }
 .hero img {
-    max-width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
 }
 
 button,
 .btn {
     background-color: #c942f7;
     color: white;
-    padding: 15px 20px;
+    padding: 5px 10px;
     border-color: #c942f7;
     text-decoration: none;
 }
@@ -92,25 +101,19 @@ button,
 }
 
 section {
-    max-width: 1200px;
+    max-width: 360px;
     margin: auto;
 }
 
 .featured-game {
     display: flex;
-}
-
-.featured-game.reverse {
-    flex-direction: row-reverse;
-}
-
-.featured-game .featured-game-info {
-    flex: 0 0 50%;
+    flex-direction: column-reverse;
 }
 
 .featured-game-info h2 {
     text-align: center;
-    margin-top: 100px;
+    justify-content: center;
+    margin-top: 5px;
 }
 
 .featured-game-info h4 {
@@ -119,7 +122,8 @@ section {
 
 .featured-game-info p {
     text-align: left;
-    margin: 50px;
+    margin: 20px 30px;
+    font-size: 14px;
 }
 
 .featured-game-info .info {
@@ -127,14 +131,14 @@ section {
     margin-top: 20px;
 }
 .featured-game-info .link {
-    text-align: left;
+    text-align: center;
     color: #c942f7;
-    padding-left: 70px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .featured-game-info .btn {
-    margin: 120px 55px 0;
+    margin: 120px;
+    text-align: center;
 }
 
 .featured-game-info .btn:hover {
@@ -144,22 +148,42 @@ section {
 }
 .featured-game img {
     flex: 0 0 50%;
-    max-width: 50%;
-    margin: 80px;
+    max-width: 360px;
+    margin: 40px;
+}
+
+.featured-game-info-reverse .link {
+    text-align: center;
+    color: #c942f7;
+    font-size: 14px;
+}
+
+.featured-game-info-reverse .info {
+    margin-top: 16px;
+}
+
+.featured-game-info-reverse .btn {
+    margin: 120px;
+}
+
+.featured-game-info-reverse a:hover {
+    color: #c942f7;
+    background-color: white;
 }
 
 .top-games h2 {
     text-align: center;
+    margin: 60px 15px 10px 15px;
 }
 
 .rating {
-    font-size: 30px;
+    font-size: 25px;
     color: #c942f7;
 }
 .top-game-entry img {
-    width: 240px;
-    height: 360px;
-    margin-left: 50px;
+    width: 200px;
+    height: 180px;
+    margin-left: 5px 30px;
 }
 
 .top-game-entry a:hover {
@@ -168,10 +192,9 @@ section {
 
 .top-games-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 32px;
-    margin: 60px 0;
+    margin: 15px 0;
     text-align: center;
 }
 
@@ -184,40 +207,133 @@ footer {
     color: #c942f7;
     margin-top: 80px;
 }
+
 /* TABLET */
 @media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
     header ul {
         flex-direction: row;
-        width: 768pxo;
+        justify-content: center;
+        max-width: 786px;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 20px 10px;
+        color: black;
+        text-align: center;
+    }
+
+    input {
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 0px;
+    }
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    button .btn {
+        width: 140px;
+        padding: 15px 20px;
     }
 
     .hero img {
-        width: 100%;
+        max-width: 100%;
+    }
+    section {
+        max-width: 100%;
+        margin: auto;
     }
 
+    .featured-game {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .featured-game.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .featured-game-info h2 {
+        margin-top: 50px;
+    }
+
+    .featured-game .featured-game-info-reverse {
+        flex: 0 0 50%;
+    }
+    .featured-game-info-reverse p {
+        margin: 20px;
+        font-size: 14px;
+    }
+
+    .featured-game-info-reverse {
+        margin-top: 10px;
+    }
+
+    .featured-game-info .btn {
+        margin: 120px 0 100px 50px;
+        text-align: left;
+    }
+    .featured-game-info-reverse .info {
+        margin-top: 5px;
+    }
+
+    .featured-game-info-reverse .btn {
+        margin: 120px 0 100px 50px;
+    }
     .featured-game img {
         flex: 0 0 50%;
-        max-width: 50%;
-        margin: 80px;
+        max-width: 40%;
+        margin: 40px;
+    }
+
+    .top-game-entry img {
+        width: 190px;
+        height: 300px;
+        margin: 0 0 60px 30px;
+    }
+
+    .top-games-wrapper {
+        flex-direction: row;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: black;
+        padding: 30px 20px;
+        color: #c942f7;
+        margin-top: 80px;
     }
 }
 
 /* PC */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     header {
         display: flex;
         flex-direction: row;
+        justify-content: left;
+        width: 100%;
     }
 
     ul {
-        margin-top: 60px;
-    }
-
-    header ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        max-width: 100%;
+        margin-top: 20px;
     }
 
     .hero {
@@ -245,28 +361,14 @@ footer {
     }
     button {
         width: 140px;
+        padding: 15px 20px;
     }
     .hero img {
         max-width: 100%;
     }
 
-    button,
-    .btn {
-        background-color: #c942f7;
-        color: white;
-        padding: 15px 20px;
-        border-color: #c942f7;
-        text-decoration: none;
-    }
-
-    .hero button:hover {
-        color: #c942f7;
-        background-color: white;
-        border-color: #c942f7;
-    }
-
     section {
-        max-width: 1200px;
+        width: 100%;
         margin: auto;
     }
 
@@ -278,13 +380,21 @@ footer {
         flex-direction: row-reverse;
     }
 
+    .featured-game-info-reverse .info {
+        margin-top: 10px;
+    }
+
+    .featured-game-info-reverse .btn {
+        margin: 120px;
+    }
+
     .featured-game .featured-game-info {
         flex: 0 0 50%;
     }
 
     .featured-game-info h2 {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     .featured-game-info h4 {
@@ -293,7 +403,8 @@ footer {
 
     .featured-game-info p {
         text-align: left;
-        margin: 50px;
+        margin: 30px 30px;
+        font-size: 16px;
     }
 
     .featured-game-info .info {
@@ -302,28 +413,30 @@ footer {
     }
     .featured-game-info .link {
         text-align: left;
-        color: #c942f7;
-        padding-left: 70px;
         font-size: 12px;
     }
 
     .featured-game-info .btn {
-        margin: 120px 55px 0;
+        margin: 120px 0 100px 50px;
+        text-align: left;
     }
 
-    .featured-game-info .btn:hover {
+    .featured-game-info-reverse .info p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .featured-game-info-reverse .btn {
+        margin: 120px 0 100px 50px;
+    }
+
+    .featured-game-info-reverse a:hover {
         color: #c942f7;
         background-color: white;
-        border-color: black;
     }
     .featured-game img {
         flex: 0 0 50%;
-        max-width: 50%;
-        margin: 80px;
-    }
-
-    .top-games h2 {
-        text-align: center;
+        max-width: 40%;
     }
 
     .rating {
@@ -331,21 +444,17 @@ footer {
         color: #c942f7;
     }
     .top-game-entry img {
-        width: 240px;
-        height: 360px;
-        margin-left: 50px;
-    }
-
-    .top-game-entry a:hover {
-        color: #c942f7;
+        width: 280px;
+        height: 420px;
+        align-items: center;
     }
 
     .top-games-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 32px;
-        margin: 60px 0;
+        gap: 40px;
+        margin: 80px 0;
         text-align: center;
     }
 
