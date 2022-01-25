@@ -614,8 +614,8 @@ i:hover {
     flex-direction: row;
     justify-content: space-around;
     background-color: rgb(224, 222, 222);
-    padding: 30px;
-    margin: 40px 0 20px 0;
+    padding: 100px;
+    margin: 150px 0 0 0;
 }
 
 .fa {
@@ -626,7 +626,64 @@ i:hover {
     color: #c942f7;
 }
 
-.contact .address p {
-    font-size: 30px;
+.additional-info p {
+    font-size: 16px;
     font-weight: bold;
+}
+
+.getintouch {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 50%;
+    justify-content: left;
+    background-color: rgb(224, 222, 222);
+    padding: 180px;
+    gap: 5%;
+    margin: 0;
+}
+
+.getintouch h1 .contact .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.getintouch img {
+    width: 700px;
+}
+.getintouch h2 {
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.message-box {
+    margin-left: 200px;
+}
+
+input {
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+}
+
+.submit {
+    background-color: #c942f7;
+    padding: 10px 15px;
+}
+.submit:hover {
+    background-color: #cd83e6;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px 0 60px 170px;
+    gap: 100px;
+}
+
+.map-info h2 {
+    margin-top: 50px;
 }
