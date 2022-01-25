@@ -1,10 +1,13 @@
+* {
+    margin: 0;
+}
+
 .logo {
     max-width: 90px;
     margin: 10px;
 }
 
 body {
-    margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -345,6 +348,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 0 40px;
     }
 
     header nav {
@@ -500,4 +504,107 @@ footer {
         color: #c942f7;
         margin-top: 80px;
     }
+}
+
+/* gameslist*/
+
+.city {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(228, 226, 226);
+    margin: auto;
+}
+
+i {
+    color: #c942f7;
+}
+
+i:hover {
+    color: #cd83e6;
+    border: #c942f7;
+}
+
+.description {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 0 0 50%;
+    margin: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+.description img {
+    width: 400px;
+}
+
+/* contact us*/
+
+.pinkroom {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+}
+
+.aboutus-info p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 180px;
+}
+
+.aboutus h2 {
+    text-align: center;
+    margin: 40px;
+}
+
+.vision {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 0 0 50%;
+    padding: 60px;
+    margin: auto;
+    gap: 100px;
+}
+
+.vision-info h2 {
+    text-align: center;
+    margin-right: 260px;
+    padding-bottom: 10px;
+}
+
+.vision-info p {
+    text-align: center;
+    margin: 5px 340px 5px 0;
+    padding-top: 30px;
+}
+
+.vision img {
+    padding-left: 180px;
+}
+
+.mission-reverse {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 50%;
+    padding: 50px;
+    margin: auto;
+}
+
+.mission-reverse h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.mission-reverse p {
+    text-align: center;
+    padding: 10px 160px;
+}
+.mission-reverse img {
+    display: flex;
+    justify-content: center;
+    padding-right: 220px;
 }
