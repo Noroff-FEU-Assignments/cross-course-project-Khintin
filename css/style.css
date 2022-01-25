@@ -608,3 +608,25 @@ i:hover {
     justify-content: center;
     padding-right: 220px;
 }
+
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(224, 222, 222);
+    padding: 30px;
+    margin: 40px 0 20px 0;
+}
+
+.fa {
+    font-size: 30px;
+}
+
+.fa:hover {
+    color: #c942f7;
+}
+
+.contact .address p {
+    font-size: 30px;
+    font-weight: bold;
+}
