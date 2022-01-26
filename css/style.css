@@ -7,8 +7,12 @@
     margin: 10px;
 }
 
+h2 h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -54,7 +58,6 @@ header nav ul {
 ul {
     font-weight: bold;
     text-align: center;
-    padding: 20px;
     list-style: none;
 }
 
@@ -74,11 +77,9 @@ a {
 }
 
 input {
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 5px;
+    border-radius: 10px;
+    padding: 10px;
     justify-content: center;
-    margin-top: 20px;
 }
 
 li a:hover {
@@ -101,38 +102,46 @@ li a:hover {
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 30px;
+    font-family: "Zen Dots", cursive;
+    background: -webkit-linear-gradient(rgb(63, 0, 0), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h1:hover {
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(63, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero h2 {
-    font-size: 25px;
+    color: black;
+    font-size: 20px;
     font-family: serif;
     margin-top: 10px;
 }
 
-button {
-    width: 120px;
-    margin-top: 30px;
-}
 .hero img {
     max-width: 380px;
     display: flex;
     flex-direction: column;
 }
 
-button,
-.btn {
-    background-color: #c942f7;
-    color: white;
+.hero button {
+    background-color: white;
+    color: #c942f7;
     padding: 5px 10px;
     border-color: #c942f7;
     text-decoration: none;
+    width: 120px;
+    margin-top: 30px;
 }
 
 .hero button:hover {
-    color: #c942f7;
-    background-color: white;
-    border-color: #c942f7;
+    color: white;
+    background-color: #c942f7;
+    border-color: white;
 }
 
 section {
@@ -171,13 +180,17 @@ section {
     font-size: 10px;
 }
 
-.featured-game-info .btn {
+.btn {
     margin-left: 50px;
+    background-color: #c942f7;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 15px;
 }
 
-.featured-game-info .btn:hover {
-    color: #c942f7;
-    background-color: white;
+.btn:hover {
+    color: black;
+    background-color: #cd83e6;
     border-color: black;
 }
 .featured-game img {
@@ -266,7 +279,7 @@ footer {
     }
 
     .hero h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .hero h2 {
@@ -348,7 +361,6 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 40px;
     }
 
     header nav {
@@ -360,18 +372,18 @@ footer {
         display: flex;
         flex-direction: row !important;
         width: auto !important;
+        gap: 80px;
     }
-
+    header ul a {
+        text-align: center;
+        font-size: 25px;
+    }
     header nav .btn-mobile-menu {
         display: none;
     }
 
     header nav label {
         display: none;
-    }
-
-    ul {
-        margin-top: 20px;
     }
 
     .hero {
@@ -391,13 +403,12 @@ footer {
     }
 
     .hero h1 {
-        font-size: 60px;
+        font-size: 80px;
     }
     .hero h2 {
-        font-size: 35px;
-        font-family: serif;
+        font-size: 40px;
     }
-    button {
+    .hero button {
         width: 140px;
         padding: 15px 20px;
     }
