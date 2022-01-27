@@ -5,20 +5,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Gamehub - Best games at Best Price" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Zen+Dots&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <link rel="stylesheet" href="css/style.css" />
-        <title>GAME HUB</title>        
+        <title>GAME HUB</title>
     </head>
     <body>
         <header>
             <div>
-                <a href="index.html" ><img src="images/logo.png" alt="GameHubLogo" class="logo" ></a>
+                <a href="index.html"
+                    ><img src="images/logo.png" alt="GameHubLogo" class="logo"
+                /></a>
                 <nav>
                     <input type="checkbox" id="menu" class="btn-mobile-menu" />
-                        <label for="menu">
-                            <img
-                                src="https://www.nicepng.com/png/full/41-415236_menu-menubuttom-hamburger-menu-icon-white.png" alt="Mobile menu button"
-                            />
-                        </label>
+                    <label for="menu">
+                        <img
+                            src="https://www.nicepng.com/png/full/41-415236_menu-menubuttom-hamburger-menu-icon-white.png"
+                            alt="Mobile menu button"
+                        />
+                    </label>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li>
@@ -29,14 +46,51 @@
                         <li><a href="login.html">Log In</a></li>
                         <li><input type="text" placeholder="Search" /></li>
                     </ul>
-                </nav>  
+                </nav>
             </div>
         </header>
 
-        
-			<footer>
-				<span>Copyright 2022 Cristina Syversen Inc.</span>
-			</footer>
+        <main class="login-signup">
+            <section class="sign-up">
+                <div class="sign-up-info">
+                    <h2>SIGN UP</h2>
+                    <form class="message-box-info">
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Last Name" /><br />
+                        <input type="text" placeholder="Email" />
+                        <input type="text" placeholder="Password" />
+                    </form>
+                    <input type="submit" value="CONTINUE" class="submit" />
+                    <p>OR SIGN UP WITH</p>
+                    <p class="social-media">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="log-in">
+                <div class="log-in-info">
+                    <h2>LOG IN</h2>
+                    <form class="message-box-info">
+                        <input type="text" placeholder="Email" /><br />
+                        <input type="text" placeholder="Password" />
+                    </form>
+                    <input type="submit" value="LOG IN" class="submit" />
+                    <p>OR LOG IN WITH</p>
+                    <p class="social-media">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </p>
+                </div>
+            </section>
         </main>
+        <footer>
+            <span>Copyright 2022 Cristina Syversen Inc.</span>
+        </footer>
     </body>
 </html>
