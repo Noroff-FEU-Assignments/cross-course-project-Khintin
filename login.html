@@ -50,42 +50,27 @@
             </div>
         </header>
 
-        <main class="login-signup">
-            <section class="sign-up">
-                <div class="sign-up-info">
-                    <h2>SIGN UP</h2>
-                    <form class="message-box-info">
-                        <input type="text" placeholder="Name" />
-                        <input type="text" placeholder="Last Name" /><br />
-                        <input type="text" placeholder="Email" />
-                        <input type="text" placeholder="Password" />
-                    </form>
-                    <input type="submit" value="CONTINUE" class="submit" />
-                    <p>OR SIGN UP WITH</p>
-                    <p class="social-media">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-google"></a>
-                    </p>
-                </div>
-            </section>
-
-            <section class="log-in">
-                <div class="log-in-info">
+        <main class="row-page">
+            <section class="container-page">
+                <div class="login-signup-info">
                     <h2>LOG IN</h2>
                     <form class="message-box-info">
-                        <input type="text" placeholder="Email" /><br />
-                        <input type="text" placeholder="Password" />
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            class="email"
+                            placeholder="Email"
+                        /><br />
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password" />
                     </form>
-                    <input type="submit" value="LOG IN" class="submit" />
-                    <p>OR LOG IN WITH</p>
-                    <p class="social-media">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-google"></a>
-                    </p>
+
+                    <div class="row-link">
+                        <a href="#" class="log-link">Forgot Password?</a>
+                        <a href="#" class="login-btn">Log In</a>
+                        <p class="row-log">Create an account</p>
+                        <a href="sign.html" class="log-link">Sign Up</a>
+                    </div>
                 </div>
             </section>
         </main>
