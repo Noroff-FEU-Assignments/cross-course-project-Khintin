@@ -23,63 +23,53 @@
         <title>GAME HUB</title>
     </head>
     <body>
-        <header>
-            <div>
-                <a href="index.html"
-                    ><img src="images/logo.png" alt="GameHubLogo" class="logo"
-                /></a>
-                <nav>
-                    <input type="checkbox" id="menu" class="btn-mobile-menu" />
-                    <label for="menu">
-                        <img
-                            src="https://www.nicepng.com/png/full/41-415236_menu-menubuttom-hamburger-menu-icon-white.png"
-                            alt="Mobile menu button"
-                        />
-                    </label>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>
-                            <a href="gameslist.html">Games List</a>
-                        </li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Log In</a></li>
-                        <li><input type="text" placeholder="Search" /></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+       
 
         <main class="row-page">
             <section class="container-page">
-                <div class="login-signup-info">
-                    <h2>SIGN UP</h2>
-                    <form class="message-box-info">
-                        <input type="fname" placeholder="First Name" />
-                        <input type="lname" placeholder="Last Name" /><br />
-                        <input type="email" placeholder="Email" />
-                        <input type="number" placeholder="Phone/Mobile" /><br />
-                        <input type="password" placeholder="Password" />
-                        <input
-                            type="password"
-                            placeholder="Comfirm Password"
-                        /><br />
-                        <label for="birthday">Date of Birth</label>
-                        <input type="date" placeholder="Date of Birth" /><br />
-                        <p>Select your gender</p>
-                        <input type="checkbox" name="genderM" value="Male" />
-                        Male <br />
-                        <input type="checkbox" name="genderF" value="Female" />
-                        Female<br />
-                    </form>
-
-                    <div class="row-link">
-                        <a href="#" class="login-btn">SIGN UP</a>
-                        <p class="row-log">Already have an account?</p>
-                        <a href="login.html" class="log-link">Log In</a>
-                    </div>
+                <div class="icon-icon">
+                    <i>&#x2B9C;</i>
+                    <i> &#10006;</i>
                 </div>
-            </section>
+
+                <section class="checkout">
+                    <div class="billing">
+                            <h3>Billing Address</h3>
+                                <input type="text" id="fname" name="firstname" placeholder="First Name"/>
+                                <input type="text" id="lname" name="lastname" placeholder="Last Name"/><br>
+                                <input type="text" id="email" name="email" placeholder="Email"/>
+                                <input type="text" id="number" name="phone-mobile" placeholder="Contact Number"/><br>
+                                <input type="text" id="adr" name="address" placeholder="Street"/>
+                                <input type="text" id="city" name="city" placeholder="City/State"/><br>
+                                <input type="text" id="country"name="country"placeholder="Country"/>
+                                <input type="text" id="zip" name="zip" placeholder="Zip Code"/>           
+                    </div>        
+    
+                    <section class="payment">
+                            <h3>Payment</h3>
+                                 <input type="text" id="cname" name="cardname" placeholder="Name on Card" /><br>
+                                 <input type="text" id="ccnum" name="cardnumber" placeholder="Credit Card Number"/><br>
+                                 <input type="text" id="expmonth" name="expmonth" placeholder="Date/Year"/><br>
+                                 <input type="text" id="cvv" name="cvv" placeholder="CVV"/><br> 
+                                 <label for="fname">Accepted Cards</label>
+                                                        
+                    <div class="icon-container">
+                            
+                            <i class="fa fa-cc-paypal" style="color: rgb(31, 101, 206)"></i>
+                            <i class="fa fa-cc-visa" style="color: navy"></i>
+                            <i class="fa fa-cc-amex" style="color: blue"></i>
+                            <i class="fa fa-cc-mastercard" style="color: rgb(105, 5, 5)"></i>
+                            <i class="fa fa-cc-discover" style="color: orange"></i>
+                    </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"/>
+                                 Shipping address same as billing
+                            </label>     
+                                    
+                                <input type="submit" value="Continue to checkout" class="btn" />
+                                </form>
+                </section>
+    
         </main>
         <footer>
             <span>Copyright 2022 Cristina Syversen Inc.</span>

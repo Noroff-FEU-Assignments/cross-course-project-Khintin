@@ -71,6 +71,12 @@ header nav ul {
     max-width: 100%;
 }
 
+nav ul li a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
 a {
     text-decoration: none;
     padding: 30px 15px;
@@ -791,7 +797,7 @@ textarea {
     max-width: 100%;
     max-height: 100%;
     padding-top: 100px;
-    padding-bottom: 280px;
+    padding-bottom: 165px;
     background-image: linear-gradient(rgb(243, 224, 241), rgb(121, 12, 131));
     background-size: cover;
 }
@@ -818,7 +824,7 @@ textarea {
     margin-left: 2.5rem;
 }
 
-.login-signup .log-link {
+.log-link {
     color: black;
     text-decoration: underline;
     font-size: 18px;
@@ -900,4 +906,33 @@ input .cart {
 
 video {
     margin-left: 240px;
+    margin-top: 20px;
+    background-image: linear-gradient(rgb(243, 224, 241), rgb(121, 12, 131));
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 226, 226);
+    margin-top: 1rem;
+}
+
+.billing h3 {
+    margin-bottom: 15px;
+}
+
+.payment h3 {
+    margin: 15px;
+}
+
+.icon-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.icon-icon i {
+    color: black;
+    font-weight: bold;
 }
