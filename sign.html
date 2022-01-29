@@ -37,13 +37,13 @@
                         />
                     </label>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">HOME</a></li>
                         <li>
-                            <a href="gameslist.html">Games List</a>
+                            <a href="gameslist.html">GAMES LIST</a>
                         </li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Log In</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="login.html" class="active">LOG IN</a></li>
                         <li><input type="text" placeholder="Search" /></li>
                     </ul>
                 </nav>
@@ -58,7 +58,13 @@
                         <input type="fname" placeholder="First Name" />
                         <input type="lname" placeholder="Last Name" /><br />
                         <input type="email" placeholder="Email" />
-                        <input type="number" placeholder="Phone/Mobile" /><br />
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                            placeholder="Phone/Mobile"
+                        /><br />
                         <input type="password" placeholder="Password" />
                         <input
                             type="password"
@@ -74,13 +80,33 @@
                     </form>
 
                     <div class="row-link">
-                        <a href="#" class="login-btn">SIGN UP</a>
+                        <a href="/signconfirm.html" class="login-btn"
+                            >SIGN UP</a
+                        >
                         <p class="row-log">Already have an account?</p>
                         <a href="login.html" class="log-link">Log In</a>
                     </div>
                 </div>
             </section>
         </main>
+        <div class="additional-info">
+            <p class="address">
+                Game Hub <br />
+                Karl Johan 20 <br />
+                1920 Oslo
+            </p>
+            <p class="contact">
+                Mobile: 12345678 <br />
+                Phone: 87654321 <br />
+                Email: info@gamehub.com
+            </p>
+            <p class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-google"></a>
+            </p>
+        </div>
         <footer>
             <span>Copyright 2022 Cristina Syversen Inc.</span>
         </footer>

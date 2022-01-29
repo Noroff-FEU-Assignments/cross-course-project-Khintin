@@ -75,8 +75,16 @@ nav ul li a {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px;
 }
+
+nav ul li a.active {
+    color: #c942f7;
+}
+
+nav ul li a:hover {
+    color: #c942f7;
+}
+
 a {
     text-decoration: none;
     padding: 30px 15px;
@@ -90,9 +98,6 @@ input {
     justify-content: center;
 }
 
-li a:hover {
-    color: #c942f7;
-}
 .hero {
     background-image: url(/images/background.jpg);
     background-size: cover;
@@ -136,6 +141,7 @@ li a:hover {
 }
 
 .hero .btn {
+    font-family: roboto;
     background-color: white;
     color: #c942f7;
     padding: 5px 10px;
@@ -635,7 +641,7 @@ i {
     font-size: 18px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     margin: 30px 180px;
 }
 
@@ -663,7 +669,7 @@ i {
 
 .vision-info p {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     margin: 5px 340px 5px 0;
     padding: 20px;
 }
@@ -688,7 +694,7 @@ i {
 
 .mission-reverse p {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     padding: 20px 160px;
 }
 .mission-reverse img {
@@ -698,7 +704,7 @@ i {
 }
 
 video {
-    margin: 5% 0 0% 27%;
+    margin: 5% 0 2% 27%;
 }
 
 .additional-info {
@@ -707,7 +713,6 @@ video {
     justify-content: space-around;
     background-color: rgb(224, 222, 222);
     padding: 100px;
-    margin: 150px 0 0 0;
 }
 
 .fa {
@@ -796,8 +801,7 @@ textarea {
     margin: auto;
     max-width: 100%;
     max-height: 100%;
-    padding-top: 100px;
-    padding-bottom: 165px;
+    padding: 130px;
     background-image: linear-gradient(rgb(243, 224, 241), rgb(121, 12, 131));
     background-size: cover;
 }
@@ -898,11 +902,6 @@ input .cart {
     font-weight: bold;
     margin-bottom: 10px;
 }
-@media only screen and (min-width: 992px) {
-    .d-flex {
-        flex-direction: row;
-    }
-}
 
 video {
     margin-left: 240px;
@@ -935,4 +934,118 @@ video {
 .icon-icon i {
     color: black;
     font-weight: bold;
+}
+
+.payment .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.confirm-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.confirm-info img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.confirm-info h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*profile*/
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile .container-page {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+}
+.profile-info img {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.profile-info h2 {
+    text-align: center;
+    padding: 10px;
+}
+.profile-info h4 {
+    text-align: center;
+    color: #c942f7;
+}
+
+.bio-info {
+    padding: 10px;
+}
+
+.bio-info h3 {
+    padding-bottom: 20px;
+}
+
+.friends-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-entry img {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+}
+.section-friends {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 80px 0;
+    text-align: center;
+}
+
+.friendslist h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+.profile-entry {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    margin-left: 5px 20px;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin: 80px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.gallery-wrapper img {
+    width: 190px;
+    height: 260px;
+    margin: 80px 0 60px 30px;
 }
