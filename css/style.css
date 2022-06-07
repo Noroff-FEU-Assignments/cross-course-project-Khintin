@@ -625,7 +625,7 @@ textarea {
     padding: 50px 5px;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(rgb(121, 12, 131), rgb(243, 224, 241));
+    background: #f3e0f1;
     border-radius: 10px;
 }
 
