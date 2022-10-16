@@ -1,12 +1,13 @@
-# Community Science Museeum
+# Game Hub
 ## cross-course-project
 
-<img width="180" alt="semesterproject" src="https://user-images.githubusercontent.com/91951394/196059908-d1aac8d0-89b8-4be8-847a-92fa3a49aa0b.png">
+<img width="180" alt="crosscourse" src="https://user-images.githubusercontent.com/91951394/196062713-1ce196cb-5041-4d4d-9550-3a5f06ea2cf6.png">
 
-### This project is about Community Science Museum where we’re committed to making science accessible to all. Specially for kids.
+
+### This project is about Our first Course Assignment- UX Design- Design. We get a chance to choose and i choosed Game Hub. Where user can buy Games Online.
 
 # Decription
-## A newly opened Comunity Science Museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us. The exhibits are designed for you to interact with and play around to see science come to life.
+##  GameHub is an online shop where users can purchase computer games. This gaming marketplace lets you buy tons of video games online for any device. The target audience is gamers aged 18 to 25 who are interested in computer games, and would either like to purchase games or would like to sell games they have finished playing.
 
 # Processing
 
@@ -25,7 +26,8 @@
 
 git clone git@github.com:[NoroffFEU/portfolio-1-example.git](https://github.com/Noroff-FEU-Assignments/cross-course-project-Khintin.git)
 
-[Live Website][(https://project-community-science-museum.netlify.app/)](https://friendly-wilson-0412a0.netlify.app/)
+[Live Website][
+](https://distracted-bose-03e1a2.netlify.app/)](https://distracted-bose-03e1a2.netlify.app/)
 
 # Contact
 <div>
